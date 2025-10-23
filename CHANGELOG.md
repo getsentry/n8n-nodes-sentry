@@ -2,7 +2,7 @@
 
 ## 1.0.1
 
-- Fix readme
+- Bundle the Sentry Node SDK to not have external dep
 
 ## 1.0.0
 
