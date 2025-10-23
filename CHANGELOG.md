@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2
+
+- Forget it, we can't bundle the code ^^
+
 ## 1.0.1
 
 - Bundle the Sentry Node SDK to not have external dep
