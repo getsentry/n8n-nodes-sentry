@@ -1,0 +1,10 @@
+minVersion: 2.6.0
+changelogPolicy: auto
+preReleaseCommand: bash scripts/craft-pre-release.sh
+targets:
+  - name: npm
+  - name: github
+  - name: registry
+    sdks:
+      npm:@sentry/n8n-nodes-sentry:
+        includeNames: /^sentry-n8n-nodes-sentry-\d.*\.tgz$/
