@@ -15,7 +15,10 @@
         "type": "git",
         "url": "https://github.com/getsentry/n8n-nodes-sentry.git"
     },
-   "scripts": {
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
 		"build": "n8n-node build",
 		"build:watch": "tsc --watch",
 		"dev": "n8n-node dev",
