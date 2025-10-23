@@ -1,9 +1,9 @@
 {
     "name": "@sentry/n8n-nodes-sentry",
     "version": "0.1.0",
-    "description": "",
+    "description": "n8n node for sending structured log messages to Sentry",
     "license": "MIT",
-    "homepage": "",
+    "homepage": "https://github.com/getsentry/n8n-nodes-sentry",
     "keywords": [
         "n8n-community-node-package"
     ],
@@ -13,7 +13,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/<...>/n8n-nodes-<...>.git"
+        "url": "https://github.com/getsentry/n8n-nodes-sentry.git"
     },
    "scripts": {
 		"build": "n8n-node build",
@@ -32,7 +32,7 @@
         "strict": true,
         "credentials": [],
         "nodes": [
-            "dist/nodes/Example/Example.node.js"
+            "dist/nodes/Sentry/Sentry.node.js"
         ]
     },
     "devDependencies": {
@@ -41,6 +41,9 @@
         "prettier": "3.6.2",
         "release-it": "^19.0.4",
         "typescript": "5.9.2"
+    },
+    "dependencies": {
+        "@sentry/node": "^10.21.0"
     },
     "peerDependencies": {
         "n8n-workflow": "*"
