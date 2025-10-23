@@ -1,6 +1,6 @@
 {
     "name": "@sentry/n8n-nodes-sentry",
-    "version": "0.1.0",
+    "version": "1.0.1",
     "description": "n8n node for sending structured log messages to Sentry",
     "license": "MIT",
     "homepage": "https://github.com/getsentry/n8n-nodes-sentry",
@@ -19,16 +19,16 @@
         "access": "public"
     },
     "scripts": {
-	"build": "npm run bundle && n8n-node build && npm run copy-bundle",
-	"bundle": "vite build",
-	"copy-bundle": "cp nodes/Sentry/sentry-sdk.bundle.* dist/nodes/Sentry/",
-	"build:watch": "npm run bundle && tsc --watch",
-	"dev": "n8n-node dev",
-	"lint": "n8n-node lint",
-	"lint:fix": "n8n-node lint --fix",
-	"release": "n8n-node release",
-	"prepublishOnly": "n8n-node prerelease"
-},
+        "build": "npm run bundle && n8n-node build && npm run copy-bundle",
+        "bundle": "vite build",
+        "copy-bundle": "cp nodes/Sentry/sentry-sdk.bundle.* dist/nodes/Sentry/",
+        "build:watch": "npm run bundle && tsc --watch",
+        "dev": "n8n-node dev",
+        "lint": "n8n-node lint",
+        "lint:fix": "n8n-node lint --fix",
+        "release": "n8n-node release",
+        "prepublishOnly": "n8n-node prerelease"
+    },
     "files": [
         "dist"
     ],
