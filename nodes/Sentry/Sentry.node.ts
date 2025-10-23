@@ -5,8 +5,8 @@ import type {
 	INodeTypeDescription,
 } from 'n8n-workflow';
 import { NodeOperationError } from 'n8n-workflow';
-// eslint-disable-next-line
-import * as SentrySDK from './sentry-sdk.bundle.js';
+// eslint-disable-next-line @n8n/community-nodes/no-restricted-imports
+import * as SentrySDK from '@sentry/node';
 
 export class Sentry implements INodeType {
 	description: INodeTypeDescription = {
